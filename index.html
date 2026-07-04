@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Page de profil personnel de MALONGA Saint Chalbhery — Développeur web en formation">
+  <title>MALONGA Saint Chalbhery — Profil</title>
+
+  <!-- Google Fonts : Roboto (texte) + Open Sans (titres) -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@600;700&family=Roboto:wght@400;500&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- En-tête : navigation -->
+  <header class="site-header">
+    <div class="container">
+      <nav aria-label="Navigation principale">
+        <ul class="main-nav">
+          <li><a href="#photo">Profil</a></li>
+          <li><a href="#apropos">À propos</a></li>
+          <li><a href="#competences">Compétences</a></li>
+          <li><a href="#formation">Formation</a></li>
+          <li><a href="#reseaux">Réseaux</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main class="container">
+    <h1 id="page-title">MALONGA Saint Chalbhery</h1>
+
+    <div class="profile-layout">
+    <!-- Colonne gauche -->
+    <aside class="profile-sidebar">
+
+      <!-- Photo de profil -->
+      <section id="photo" class="card profile-card" aria-labelledby="photo-title">
+        <h2 id="photo-title" class="visually-hidden">Photo de profil</h2>
+        <img
+          class="profile-avatar"
+          src="images/photo-profil.jpeg"
+          alt="Photo de profil de MALONGA Saint Chalbhery, souriant, devant un ordinateur portable"
+          width="120"
+          height="120">
+        <p class="profile-role">Développeur full-stack</p>
+        <p class="profile-location">Brazzaville, Congo</p>
+        <div class="profile-actions">
+          <a href="https://github.com/Chal-B" class="btn btn-primary" target="_blank" rel="noopener noreferrer">Suivre</a>
+          <a href="#contact" class="btn btn-outline">Message</a>
+        </div>
+      </section>
+
+      <!-- Réseaux sociaux -->
+      <section id="reseaux" class="card social-card" aria-labelledby="social-title">
+        <h2 id="social-title">Réseaux sociaux</h2>
+        <ul class="social-list">
+          <li>
+            <span class="social-icon" aria-hidden="true">
+              <img src="icones/github.svg" alt="" width="18" height="18">
+            </span>
+            <div>
+              <strong>GitHub</strong>
+              <a href="https://github.com/Chal-B" target="_blank" rel="noopener noreferrer">Chal-B</a>
+            </div>
+          </li>
+          <li>
+            <span class="social-icon" aria-hidden="true">
+              <img src="icones/linkedin.svg" alt="" width="18" height="18">
+            </span>
+            <div>
+              <strong>LinkedIn</strong>
+              <a href="https://www.linkedin.com/in/saint-chalbhery-malonga-2784253b2" target="_blank" rel="noopener noreferrer">saint-chalbhery-malonga</a>
+            </div>
+          </li>
+          <li>
+            <span class="social-icon" aria-hidden="true">
+              <img src="icones/microsoft-outlook.svg" alt="" width="18" height="18">
+            </span>
+            <div>
+              <strong>E-mail</strong>
+              <a href="mailto:saintmlg@icloud.com">saintmlg@icloud.com</a>
+            </div>
+          </li>
+        </ul>
+      </section>
+
+    </aside>
+
+    <!-- Colonne droite -->
+    <div class="profile-main">
+
+      <!-- Informations personnelles -->
+      <section class="card info-card" aria-labelledby="info-title">
+        <h2 id="info-title">Informations personnelles</h2>
+        <dl class="info-list">
+          <div class="info-row">
+            <dt>E-mail</dt>
+            <dd><a href="mailto:saintmlg@icloud.com">saintmlg@icloud.com</a></dd>
+          </div>
+          <div class="info-row">
+            <dt>Téléphone</dt>
+            <dd>+242 06 950 71 96</dd>
+          </div>
+          <div class="info-row">
+            <dt>Adresse</dt>
+            <dd>Brazzaville, Congo</dd>
+          </div>
+        </dl>
+      </section>
+
+      <!-- Compétences -->
+      <div id="competences" class="skills-row">
+
+        <section class="card status-card" aria-labelledby="skills-front-title">
+          <h2 id="skills-front-title">Compétences front-end</h2>
+          <ul class="skills-list">
+            <li>
+              <img src="icones/html5.svg" alt="" width="20" height="20" class="skill-icon">
+              <span class="skill-name">HTML5</span>
+            </li>
+            <li>
+              <img src="icones/css.svg" alt="" width="20" height="20" class="skill-icon">
+              <span class="skill-name">CSS3</span>
+            </li>
+            <li>
+              <img src="icones/javascript.svg" alt="" width="20" height="20" class="skill-icon">
+              <span class="skill-name">JavaScript</span>
+            </li>
+            <li>
+              <img src="icones/react.svg" alt="" width="20" height="20" class="skill-icon">
+              <span class="skill-name">React</span>
+            </li>
+            <li>
+              <img src="icones/nextdotjs.svg" alt="" width="20" height="20" class="skill-icon">
+              <span class="skill-name">Next.js</span>
+            </li>
+            <li>
+              <img src="icones/reactnative.svg" alt="" width="20" height="20" class="skill-icon">
+              <span class="skill-name">React Native</span>
+            </li>
+          </ul>
+        </section>
+
+        <section class="card status-card" aria-labelledby="skills-back-title">
+          <h2 id="skills-back-title">Compétences back-end &amp; outils</h2>
+          <ul class="skills-list">
+            <li>
+              <img src="icones/git.svg" alt="" width="20" height="20" class="skill-icon">
+              <span class="skill-name">Git &amp; GitHub</span>
+            </li>
+            <li>
+              <img src="icones/mysql-wordmark-light.svg" alt="" width="20" height="20" class="skill-icon skill-icon--wide">
+              <span class="skill-name">MySQL</span>
+            </li>
+            <li>
+              <img src="icones/postgresql.svg" alt="" width="20" height="20" class="skill-icon">
+              <span class="skill-name">PostgreSQL</span>
+            </li>
+            <li>
+              <img src="icones/django.svg" alt="" width="20" height="20" class="skill-icon">
+              <span class="skill-name">Django</span>
+            </li>
+            <li>
+              <img src="icones/supabase.svg" alt="" width="20" height="20" class="skill-icon">
+              <span class="skill-name">Supabase</span>
+            </li>
+          </ul>
+        </section>
+
+      </div>
+
+      <!-- À propos -->
+      <section id="apropos" class="card about-card" aria-labelledby="about-title">
+        <h2 id="about-title">À propos de moi</h2>
+        <p>
+          Bonjour ! Je m'appelle MALONGA Saint Chalbhery et je suis passionné par le développement web.
+          Originaire de Brazzaville, j'ai toujours été fasciné par la façon dont la technologie
+          peut transformer la vie des gens au Congo, en Afrique et dans le monde.
+        </p>
+        <p>
+          Actuellement en formation à l'Akieni Academy, j'apprends à créer des sites web
+          accessibles, sémantiques et bien structurés. Mon objectif est de devenir
+          développeur full-stack et de contribuer à des projets numériques locaux et mondiaux.
+        </p>
+      </section>
+
+      <!-- Formation -->
+      <section id="formation" class="card formation-card" aria-labelledby="formation-title">
+        <h2 id="formation-title">Formation</h2>
+        <dl class="formation-list">
+          <div>
+            <dt><time datetime="2026">2026</time> – <time datetime="2027">2027</time></dt>
+            <dd><strong>Akieni Academy</strong> — Développement web full-stack</dd>
+          </div>
+          <div>
+            <dt><time datetime="2025">2025</time> – <time datetime="2026">2026</time></dt>
+            <dd><strong>Licence Administration de BDD</strong> — ESGAE, Brazzaville</dd>
+          </div>
+          <div>
+            <dt><time datetime="2024">2024</time> – <time datetime="2025">2025</time></dt>
+            <dd><strong>BTS Analyse et Programmation</strong> — ESGAE, Brazzaville</dd>
+          </div>
+          <div>
+            <dt><time datetime="2022">2022</time> – <time datetime="2023">2023</time></dt>
+            <dd><strong>Baccalauréat série D</strong> — Lycée Camara Laye B, Brazzaville</dd>
+          </div>
+        </dl>
+      </section>
+
+      <!-- Contact -->
+      <section id="contact" class="card contact-card" aria-labelledby="contact-title">
+        <h2 id="contact-title">Contactez-moi</h2>
+        <form action="#" method="post">
+          <div class="form-row">
+            <p>
+              <label for="nom">Nom complet</label>
+              <input type="text" id="nom" name="nom" autocomplete="name" required>
+            </p>
+            <p>
+              <label for="email">E-mail</label>
+              <input type="email" id="email" name="email" autocomplete="email" required>
+            </p>
+          </div>
+          <p>
+            <label for="sujet">Sujet</label>
+            <input type="text" id="sujet" name="sujet" required>
+          </p>
+          <p>
+            <label for="message">Message</label>
+            <textarea id="message" name="message" rows="4" required></textarea>
+          </p>
+          <button type="submit" class="btn btn-primary">Envoyer</button>
+        </form>
+      </section>
+
+    </div>
+    </div>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <p>&copy; 2026 MALONGA Saint Chalbhery — Tous droits réservés.</p>
+    </div>
+  </footer>
+
+</body>
+</html>
