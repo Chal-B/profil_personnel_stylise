@@ -3,250 +3,268 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="Page de profil personnel de MALONGA Saint Chalbhery — Développeur web en formation">
-  <title>MALONGA Saint Chalbhery — Profil</title>
-
-  <!-- Google Fonts : Roboto (texte) + Open Sans (titres) -->
+  <meta name="description" content="Portfolio de MALONGA Saint Chalbhery, développeur web full-stack à Brazzaville : projets, compétences et parcours.">
+  <meta name="author" content="MALONGA Saint Chalbhery">
+  <meta name="theme-color" content="#8f4328">
+  <meta property="og:title" content="MALONGA Saint Chalbhery — Portfolio">
+  <meta property="og:description" content="Je conçois des expériences web accessibles, rapides et utiles.">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://chal-b.github.io/profil_personnel_stylise/">
+  <meta property="og:image" content="https://chal-b.github.io/profil_personnel_stylise/preview.png">
+  <meta name="twitter:card" content="summary_large_image">
+  <title>MALONGA Saint Chalbhery — Développeur web</title>
+  <link rel="canonical" href="https://chal-b.github.io/profil_personnel_stylise/">
+  <link rel="icon" href="icones/favicon.svg" type="image/svg+xml">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@600;700&family=Roboto:wght@400;500&display=swap" rel="stylesheet">
-
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
+  <input type="checkbox" id="mode-sombre" class="controle-cache">
 
-  <!-- En-tête : navigation -->
-  <header class="site-header">
-    <div class="container">
-      <nav aria-label="Navigation principale">
-        <ul class="main-nav">
-          <li><a href="#photo">Profil</a></li>
-          <li><a href="#apropos">À propos</a></li>
-          <li><a href="#competences">Compétences</a></li>
-          <li><a href="#formation">Formation</a></li>
-          <li><a href="#reseaux">Réseaux</a></li>
-          <li><a href="#contact">Contact</a></li>
-        </ul>
-      </nav>
-    </div>
-  </header>
+  <div class="page">
+    <a class="lien-evitement" href="#contenu">Aller au contenu</a>
+    <header class="entete-site">
+      <div class="conteneur barre-navigation">
+        <a class="marque" href="#accueil" aria-label="Accueil — Saint Chalbhery">
+          <span class="monogramme" aria-hidden="true">SC</span>
+          <span>Saint Chalbhery</span>
+        </a>
 
-  <main class="container">
-    <h1 id="page-title">MALONGA Saint Chalbhery</h1>
+        <input type="checkbox" id="menu-mobile" class="controle-cache">
+        <label for="menu-mobile" class="bouton-menu">
+          <span class="masque-visuel">Ouvrir ou fermer le menu</span>
+          <span aria-hidden="true"></span>
+          <span aria-hidden="true"></span>
+        </label>
 
-    <div class="profile-layout">
-    <!-- Colonne gauche -->
-    <aside class="profile-sidebar">
+        <nav class="navigation-principale" aria-label="Navigation principale">
+          <a href="#apropos">À propos</a>
+          <a href="#competences">Compétences</a>
+          <a href="#projets">Projets</a>
+          <a href="#experience">Expérience</a>
+          <a href="#contact">Contact</a>
+        </nav>
 
-      <!-- Photo de profil -->
-      <section id="photo" class="card profile-card" aria-labelledby="photo-title">
-        <h2 id="photo-title" class="visually-hidden">Photo de profil</h2>
-        <img
-          class="profile-avatar"
-          src="images/photo-profil.jpeg"
-          alt="Photo de profil de MALONGA Saint Chalbhery, souriant, devant un ordinateur portable"
-          width="120"
-          height="120">
-        <p class="profile-role">Développeur full-stack</p>
-        <p class="profile-location">Brazzaville, Congo</p>
-        <div class="profile-actions">
-          <a href="https://github.com/Chal-B" class="btn btn-primary" target="_blank" rel="noopener noreferrer">Suivre</a>
-          <a href="#contact" class="btn btn-outline">Message</a>
+        <label for="mode-sombre" class="bouton-theme" title="Changer de thème">
+          <span class="masque-visuel">Activer ou désactiver le mode sombre</span>
+          <svg class="icone-lune" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="20" height="20" fill="none"><path d="M21.5 14.078A8.5 8.5 0 0 1 9.922 2.5a9 9 0 1 0 11.578 11.578Z" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+          <svg class="icone-soleil" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="20" height="20" fill="none"><circle cx="12" cy="12" r="4.5" stroke="currentColor" stroke-width="1.5"/><path d="M12 2v2M12 20v2M22 12h-2M4 12H2M19.07 4.93l-1.41 1.41M6.34 17.66l-1.41 1.41M19.07 19.07l-1.41-1.41M6.34 6.34 4.93 4.93" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/></svg>
+        </label>
+      </div>
+    </header>
+
+    <main id="contenu">
+      <section id="accueil" class="section accueil">
+        <div class="conteneur grille-accueil">
+          <div class="contenu-accueil">
+            <p class="surtitre"><span></span> Disponible pour de nouveaux projets</p>
+            <h1>Je transforme des idées en <strong>expériences web utiles.</strong></h1>
+            <p class="introduction-accueil">Développeur full-stack en formation à Brazzaville, je construis des interfaces accessibles, performantes et pensées pour leurs utilisateurs.</p>
+            <div class="actions-accueil">
+              <a class="bouton bouton-principal" href="#projets">Découvrir mes projets <svg class="icone-fleche" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="16" height="16" fill="none"><path d="M17 7 7 17M8 7h9v9" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg></a>
+              <a class="bouton bouton-secondaire" href="#contact">Me contacter</a>
+            </div>
+            <ul class="statistiques-accueil" aria-label="Quelques chiffres">
+              <li><strong>10+</strong><span>projets réalisés</span></li>
+              <li><strong>8</strong><span>technologies</span></li>
+              <li><strong>100%</strong><span>curiosité</span></li>
+            </ul>
+          </div>
+
+          <figure class="visuel-accueil">
+            <div class="cadre-portrait">
+              <img src="images/photo-profil.jpeg" alt="Portrait de MALONGA Saint Chalbhery" width="1024" height="683" fetchpriority="high" decoding="async">
+            </div>
+            <figcaption class="legende-portrait">
+              <span>Brazzaville · Congo</span>
+              <span><b aria-hidden="true">&lt;/&gt;</b> Construire. Tester. Améliorer.</span>
+              <span><i aria-hidden="true"></i> Ouvert aux collaborations</span>
+            </figcaption>
+          </figure>
         </div>
       </section>
-
-      <!-- Réseaux sociaux -->
-      <section id="reseaux" class="card social-card" aria-labelledby="social-title">
-        <h2 id="social-title">Réseaux sociaux</h2>
-        <ul class="social-list">
-          <li>
-            <span class="social-icon" aria-hidden="true">
-              <img src="icones/github.svg" alt="" width="18" height="18">
-            </span>
-            <div>
-              <strong>GitHub</strong>
-              <a href="https://github.com/Chal-B" target="_blank" rel="noopener noreferrer">Chal-B</a>
+      <section id="apropos" class="section section-douce">
+        <div class="conteneur grille-apropos">
+          <div>
+            <p class="repere-section">01 · À propos</p>
+            <h2 class="titre-section">Un développeur curieux, ancré à Brazzaville.</h2>
+          </div>
+          <div class="contenu-apropos">
+            <p class="texte-important">Je m’appelle <strong>MALONGA Saint Chalbhery</strong>. J’aime comprendre un problème avant d’écrire la première ligne de code.</p>
+            <p>À l’Akieni Academy, je développe une approche complète du web : structure sémantique, interfaces adaptatives, bases de données et collaboration avec Git. Mon ambition est de créer des produits numériques utiles au Congo, en Afrique et au-delà.</p>
+            <div class="valeurs">
+              <article><span>01</span><h3>Clarté</h3><p>Des interfaces simples à comprendre et à utiliser.</p></article>
+              <article><span>02</span><h3>Impact</h3><p>Du code au service de besoins concrets.</p></article>
+              <article><span>03</span><h3>Progression</h3><p>Apprendre, mesurer puis améliorer en continu.</p></article>
             </div>
-          </li>
-          <li>
-            <span class="social-icon" aria-hidden="true">
-              <img src="icones/linkedin.svg" alt="" width="18" height="18">
-            </span>
-            <div>
-              <strong>LinkedIn</strong>
-              <a href="https://www.linkedin.com/in/saint-chalbhery-malonga-2784253b2" target="_blank" rel="noopener noreferrer">saint-chalbhery-malonga</a>
-            </div>
-          </li>
-          <li>
-            <span class="social-icon" aria-hidden="true">
-              <img src="icones/microsoft-outlook.svg" alt="" width="18" height="18">
-            </span>
-            <div>
-              <strong>E-mail</strong>
-              <a href="mailto:saintmlg@icloud.com">saintmlg@icloud.com</a>
-            </div>
-          </li>
-        </ul>
+          </div>
+        </div>
       </section>
-
-    </aside>
-
-    <!-- Colonne droite -->
-    <div class="profile-main">
-
-      <!-- Informations personnelles -->
-      <section class="card info-card" aria-labelledby="info-title">
-        <h2 id="info-title">Informations personnelles</h2>
-        <dl class="info-list">
-          <div class="info-row">
-            <dt>E-mail</dt>
-            <dd><a href="mailto:saintmlg@icloud.com">saintmlg@icloud.com</a></dd>
+      <section id="competences" class="section">
+        <div class="conteneur">
+          <div class="entete-section">
+            <div><p class="repere-section">02 · Compétences</p><h2 class="titre-section">Des bases solides, une progression visible.</h2></div>
+            <p>Un profil orienté front-end qui évolue vers le développement full-stack.</p>
           </div>
-          <div class="info-row">
-            <dt>Téléphone</dt>
-            <dd>+242 06 950 71 96</dd>
+          <div class="grille-competences">
+            <article class="panneau-competences">
+              <h3>Front-end</h3>
+              <ul class="liste-competences">
+                <li class="avec-icones"><span class="icones-competence" aria-hidden="true"><img src="icones/html5.svg" alt="" width="26" height="26"><img src="icones/css.svg" alt="" width="26" height="26"></span><span>HTML5 et CSS3</span></li>
+                <li class="avec-icones"><span class="icones-competence" aria-hidden="true"><img src="icones/javascript.svg" alt="" width="26" height="26"><img src="icones/typescript.svg" alt="" width="26" height="26"></span><span>JavaScript et TypeScript</span></li>
+                <li class="avec-icones"><span class="icones-competence" aria-hidden="true"><img src="icones/tailwind-css.svg" alt="" width="26" height="26"></span><span>Tailwind CSS</span></li>
+                <li class="avec-icones"><span class="icones-competence" aria-hidden="true"><img src="icones/react.svg" alt="" width="28" height="26"><img src="icones/nextdotjs.svg" alt="" width="26" height="26"></span><span>React et Next.js</span></li>
+              </ul>
+            </article>
+            <article class="panneau-competences">
+              <h3>Back-end</h3>
+              <ul class="liste-competences">
+                <li class="avec-icones"><span class="icones-competence" aria-hidden="true"><img src="icones/nodedotjs.svg" alt="" width="26" height="26"><img src="icones/express.svg" alt="" width="26" height="26"></span><span>Node.js et Express</span></li>
+                <li class="avec-icones"><span class="icones-competence" aria-hidden="true"><img src="icones/nestjs.svg" alt="" width="26" height="26"></span><span>NestJS</span></li>
+                <li class="avec-icones"><span class="icones-competence" aria-hidden="true"><img src="icones/python.svg" alt="" width="26" height="26"></span><span>Python</span></li>
+                <li class="avec-icones"><span class="icones-competence" aria-hidden="true"><img src="icones/postgresql.svg" alt="" width="26" height="26"><img src="icones/mongodb.svg" alt="" width="26" height="26"></span><span>PostgreSQL et MongoDB</span></li>
+              </ul>
+            </article>
+            <article class="panneau-competences">
+              <h3>Outils</h3>
+              <ul class="liste-competences">
+                <li class="avec-icones"><span class="icones-competence" aria-hidden="true"><img src="icones/git.svg" alt="" width="26" height="26"><img src="icones/github.svg" alt="" width="26" height="26"></span><span>Git et GitHub</span></li>
+                <li class="avec-icones"><span class="icones-competence" aria-hidden="true"><img src="icones/docker.svg" alt="" width="26" height="26"></span><span>Docker</span></li>
+                <li class="avec-icones"><span class="icones-competence" aria-hidden="true"><img src="icones/visual-studio-code.svg" alt="" width="26" height="26"></span><span>Visual Studio Code</span></li>
+                <li class="avec-icones"><span class="icones-competence" aria-hidden="true"><img src="icones/postman.svg" alt="" width="26" height="26"></span><span>Postman</span></li>
+              </ul>
+            </article>
           </div>
-          <div class="info-row">
-            <dt>Adresse</dt>
-            <dd>Brazzaville, Congo</dd>
-          </div>
-        </dl>
+        </div>
       </section>
+      <section id="projets" class="section section-sombre">
+        <div class="conteneur">
+          <div class="entete-section">
+            <div><p class="repere-section">03 · Projets</p><h2 class="titre-section">Une sélection de projets récents.</h2></div>
+            <p>Des exercices devenus de vraies interfaces, conçues avec attention.</p>
+          </div>
 
-      <!-- Compétences -->
-      <div id="competences" class="skills-row">
+          <input type="radio" name="filtre" id="filtre-tous" class="controle-cache" checked>
+          <input type="radio" name="filtre" id="filtre-html" class="controle-cache">
+          <input type="radio" name="filtre" id="filtre-css" class="controle-cache">
+          <input type="radio" name="filtre" id="filtre-adaptatif" class="controle-cache">
 
-        <section class="card status-card" aria-labelledby="skills-front-title">
-          <h2 id="skills-front-title">Compétences front-end</h2>
-          <ul class="skills-list">
-            <li>
-              <img src="icones/html5.svg" alt="" width="20" height="20" class="skill-icon">
-              <span class="skill-name">HTML5</span>
-            </li>
-            <li>
-              <img src="icones/css.svg" alt="" width="20" height="20" class="skill-icon">
-              <span class="skill-name">CSS3</span>
-            </li>
-            <li>
-              <img src="icones/javascript.svg" alt="" width="20" height="20" class="skill-icon">
-              <span class="skill-name">JavaScript</span>
-            </li>
-            <li>
-              <img src="icones/react.svg" alt="" width="20" height="20" class="skill-icon">
-              <span class="skill-name">React</span>
-            </li>
-            <li>
-              <img src="icones/nextdotjs.svg" alt="" width="20" height="20" class="skill-icon">
-              <span class="skill-name">Next.js</span>
-            </li>
-            <li>
-              <img src="icones/reactnative.svg" alt="" width="20" height="20" class="skill-icon">
-              <span class="skill-name">React Native</span>
-            </li>
-          </ul>
-        </section>
+          <div class="filtres-projets" role="group" aria-label="Filtrer les projets">
+            <label for="filtre-tous">Tous</label>
+            <label for="filtre-html">HTML</label>
+            <label for="filtre-css">CSS</label>
+            <label for="filtre-adaptatif">Responsive</label>
+          </div>
 
-        <section class="card status-card" aria-labelledby="skills-back-title">
-          <h2 id="skills-back-title">Compétences back-end &amp; outils</h2>
-          <ul class="skills-list">
-            <li>
-              <img src="icones/git.svg" alt="" width="20" height="20" class="skill-icon">
-              <span class="skill-name">Git &amp; GitHub</span>
-            </li>
-            <li>
-              <img src="icones/mysql-wordmark-light.svg" alt="" width="20" height="20" class="skill-icon skill-icon--wide">
-              <span class="skill-name">MySQL</span>
-            </li>
-            <li>
-              <img src="icones/postgresql.svg" alt="" width="20" height="20" class="skill-icon">
-              <span class="skill-name">PostgreSQL</span>
-            </li>
-            <li>
-              <img src="icones/django.svg" alt="" width="20" height="20" class="skill-icon">
-              <span class="skill-name">Django</span>
-            </li>
-            <li>
-              <img src="icones/supabase.svg" alt="" width="20" height="20" class="skill-icon">
-              <span class="skill-name">Supabase</span>
-            </li>
-          </ul>
-        </section>
-
+          <div class="grille-projets">
+            <article class="carte-projet projet-vedette technologie-html technologie-css adaptatif">
+              <div class="image-projet">
+                <picture>
+                  <source type="image/webp" srcset="images/projects/landing-page-480.webp 480w, images/projects/landing-page-960.webp 960w" sizes="(min-width: 1024px) 720px, (min-width: 600px) 45vw, 92vw">
+                  <img src="images/projects/landing-page.png" alt="Aperçu de la landing page LearnThis" width="1024" height="485" loading="lazy" decoding="async">
+                </picture>
+              </div>
+              <div class="contenu-projet"><p class="numero-projet">01</p><h3>Landing page LearnThis</h3><p>Une page d’apprentissage claire, structurée pour convertir les visiteurs en apprenants.</p><p class="description-longue">Bannière immersive, sections pédagogiques et appels à l’action cohérents dans une interface responsive.</p><ul class="etiquettes"><li>HTML</li><li>CSS</li><li>Responsive</li></ul><a href="https://github.com/Chal-B/landing_page" target="_blank" rel="noopener noreferrer">Voir sur GitHub <svg class="icone-fleche" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="16" height="16" fill="none"><path d="M17 7 7 17M8 7h9v9" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg></a></div>
+            </article>
+            <article class="carte-projet technologie-html technologie-css adaptatif">
+              <div class="image-projet">
+                <picture>
+                  <source type="image/webp" srcset="images/projects/navigation-480.webp 480w, images/projects/navigation-960.webp 960w" sizes="(min-width: 1024px) 360px, (min-width: 600px) 45vw, 92vw">
+                  <img src="images/projects/navigation.png" alt="Aperçu de la navigation responsive LearnThis" width="1024" height="352" loading="lazy" decoding="async">
+                </picture>
+              </div>
+              <div class="contenu-projet"><p class="numero-projet">02</p><h3>Navigation responsive</h3><p>Une navigation LearnThis adaptée aux écrans tactiles et au bureau.</p><p class="description-longue">Menu pill, sous-navigation, thème sombre et états actifs accessibles.</p><ul class="etiquettes"><li>HTML</li><li>CSS</li><li>Mobile-first</li></ul><a href="https://github.com/Chal-B/navigation_responsive" target="_blank" rel="noopener noreferrer">Voir sur GitHub <svg class="icone-fleche" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="16" height="16" fill="none"><path d="M17 7 7 17M8 7h9v9" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg></a></div>
+            </article>
+            <article class="carte-projet technologie-html technologie-css adaptatif">
+              <div class="image-projet">
+                <picture>
+                  <source type="image/webp" srcset="images/projects/dashboard-480.webp 480w, images/projects/dashboard-960.webp 960w" sizes="(min-width: 1024px) 360px, (min-width: 600px) 45vw, 92vw">
+                  <img src="images/projects/dashboard.png" alt="Aperçu du tableau de bord LearnThis" width="1024" height="473" loading="lazy" decoding="async">
+                </picture>
+              </div>
+              <div class="contenu-projet"><p class="numero-projet">03</p><h3>Dashboard admin</h3><p>Un tableau de bord e-learning pour suivre cours et inscriptions.</p><p class="description-longue">Barre latérale, statistiques, graphiques CSS et tableau responsive sans framework.</p><ul class="etiquettes"><li>CSS Grid</li><li>Flexbox</li><li>Dashboard</li></ul><a href="https://github.com/Chal-B/dashboard_admin" target="_blank" rel="noopener noreferrer">Voir sur GitHub <svg class="icone-fleche" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="16" height="16" fill="none"><path d="M17 7 7 17M8 7h9v9" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg></a></div>
+            </article>
+            <article class="carte-projet technologie-html technologie-css adaptatif">
+              <div class="image-projet">
+                <picture>
+                  <source type="image/webp" srcset="images/projects/galerie-congo-480.webp 480w, images/projects/galerie-congo-960.webp 960w" sizes="(min-width: 1024px) 360px, (min-width: 600px) 45vw, 92vw">
+                  <img src="images/projects/galerie-congo.png" alt="Aperçu de la galerie de photos du Congo" width="1024" height="451" loading="lazy" decoding="async">
+                </picture>
+              </div>
+              <div class="contenu-projet"><p class="numero-projet">04</p><h3>Galerie du Congo</h3><p>Une galerie qui valorise Brazzaville et le patrimoine congolais.</p><p class="description-longue">Mosaïque CSS Grid, filtres, pagination et lightbox entièrement en CSS.</p><ul class="etiquettes"><li>CSS Grid</li><li>Lightbox</li><li>Responsive</li></ul><a href="https://github.com/Chal-B/galerie_de_photos" target="_blank" rel="noopener noreferrer">Voir sur GitHub <svg class="icone-fleche" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="16" height="16" fill="none"><path d="M17 7 7 17M8 7h9v9" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg></a></div>
+            </article>
+            <article class="carte-projet technologie-html technologie-css">
+              <div class="image-projet">
+                <picture>
+                  <source type="image/webp" srcset="images/projects/mana-restaurant-480.webp 480w, images/projects/mana-restaurant-730.webp 730w" sizes="(min-width: 1024px) 360px, (min-width: 600px) 45vw, 92vw">
+                  <img src="images/projects/mana-restaurant.png" alt="Aperçu mobile du site Mana Restaurant" width="730" height="731" loading="lazy" decoding="async">
+                </picture>
+              </div>
+              <div class="contenu-projet"><p class="numero-projet">05</p><h3>Mana Restaurant</h3><p>Un site vitrine chaleureux pour présenter un restaurant africain et congolais à Brazzaville.</p><p class="description-longue">Bannière immersive, navigation mobile, accès rapide à la carte et identité visuelle inspirée de l’univers du restaurant.</p><ul class="etiquettes"><li>HTML</li><li>CSS</li><li>Responsive</li></ul><a href="https://github.com/Chal-B/mana_restaurant" target="_blank" rel="noopener noreferrer">Voir sur GitHub <svg class="icone-fleche" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="16" height="16" fill="none"><path d="M17 7 7 17M8 7h9v9" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg></a></div>
+            </article>
+            <article class="carte-projet technologie-html technologie-css">
+              <div class="image-projet">
+                <picture>
+                  <source type="image/webp" srcset="images/projects/carte-produit-480.webp 480w, images/projects/carte-produit-960.webp 960w" sizes="(min-width: 1024px) 360px, (min-width: 600px) 45vw, 92vw">
+                  <img src="images/projects/carte-produit.png" alt="Aperçu de la carte produit Shopline" width="1024" height="506" loading="lazy" decoding="async">
+                </picture>
+              </div>
+              <div class="contenu-projet"><p class="numero-projet">06</p><h3>Carte produit</h3><p>Une fiche produit moderne pensée pour une lecture rapide.</p><p class="description-longue">Composition équilibrée, prix mis en avant et micro-interactions au survol.</p><ul class="etiquettes"><li>HTML</li><li>CSS</li><li>Composant</li></ul><a href="https://github.com/Chal-B/carte_produit_stylisee" target="_blank" rel="noopener noreferrer">Voir sur GitHub <svg class="icone-fleche" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="16" height="16" fill="none"><path d="M17 7 7 17M8 7h9v9" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg></a></div>
+            </article>
+          </div>
+        </div>
+      </section>
+      <section id="experience" class="section">
+        <div class="conteneur grille-experience">
+          <div><p class="repere-section">04 · Expérience</p><h2 class="titre-section">Apprendre en construisant.</h2><p>Chaque étape enrichit ma manière de concevoir et de collaborer.</p></div>
+          <ol class="chronologie">
+            <li><time datetime="2026">2026 — aujourd’hui</time><div><h3>Développement web full-stack</h3><p>Akieni Academy · Projets HTML, CSS, Git et montée en compétence JavaScript.</p></div></li>
+            <li><time datetime="2025">2025 — 2026</time><div><h3>Licence Administration de BDD</h3><p>ESGAE, Brazzaville · Modélisation, SQL et gestion de données.</p></div></li>
+            <li><time datetime="2024">2024 — 2025</time><div><h3>BTS Analyse et Programmation</h3><p>ESGAE, Brazzaville · Algorithmique et fondamentaux du développement.</p></div></li>
+            <li><time datetime="2022">2022 — 2023</time><div><h3>Baccalauréat série D</h3><p>Lycée Camara Laye B, Brazzaville.</p></div></li>
+          </ol>
+        </div>
+      </section>
+      <section id="contact" class="section section-contact">
+        <div class="conteneur grille-contact">
+          <div>
+            <p class="repere-section">05 · Contact</p>
+            <h2 class="titre-section">Construisons quelque chose d’utile.</h2>
+            <p>Une idée, une collaboration ou simplement une question ? Écrivez-moi, je répondrai avec plaisir.</p>
+            <ul class="liens-contact">
+              <li>
+                <span class="icone-contact" aria-hidden="true"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="22" height="22" fill="none"><path d="M2 6.5c0-1.4 1.12-2.5 2.5-2.5h15c1.38 0 2.5 1.1 2.5 2.5v11c0 1.4-1.12 2.5-2.5 2.5h-15A2.5 2.5 0 0 1 2 17.5v-11Z" stroke="currentColor" stroke-width="1.5"/><path d="m2.5 7 7.94 5.29a3 3 0 0 0 3.12 0L21.5 7" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg></span>
+                <div><span>E-mail</span><a href="mailto:saintmlg@icloud.com">saintmlg@icloud.com</a></div>
+              </li>
+              <li>
+                <span class="icone-contact" aria-hidden="true"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="22" height="22" fill="none"><path d="M4.5 3.5 7 3c.6-.06 1.17.28 1.4.84l1.2 2.88c.2.5.1 1.07-.28 1.45L7.9 9.6a13.4 13.4 0 0 0 6.5 6.5l1.43-1.42c.38-.38.95-.49 1.45-.28l2.88 1.2c.56.23.9.8.84 1.4l-.5 2.5a2 2 0 0 1-2 1.5C10.36 20.6 3.4 13.64 3 5.5a2 2 0 0 1 1.5-2Z" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg></span>
+                <div><span>Téléphone</span><a href="tel:+242069507196">+242 06 950 71 96</a></div>
+              </li>
+              <li>
+                <span class="icone-contact" aria-hidden="true"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="22" height="22" fill="none"><path d="M12 21s-7-5.13-7-11a7 7 0 1 1 14 0c0 5.87-7 11-7 11Z" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/><circle cx="12" cy="10" r="2.5" stroke="currentColor" stroke-width="1.5"/></svg></span>
+                <div><span>Localisation</span><strong>Brazzaville, Congo</strong></div>
+              </li>
+            </ul>
+          </div>
+          <form class="formulaire-contact" action="mailto:saintmlg@icloud.com" method="post" enctype="text/plain">
+            <p class="aide-formulaire">Tous les champs sont obligatoires. Le bouton ouvre votre application e-mail.</p>
+            <div class="ligne-formulaire"><p><label for="nom">Nom complet</label><input id="nom" name="nom" type="text" autocomplete="name" required></p><p><label for="email">E-mail</label><input id="email" name="email" type="email" autocomplete="email" required></p></div>
+            <p><label for="sujet">Sujet</label><input id="sujet" name="sujet" type="text" required></p>
+            <p><label for="message">Votre message</label><textarea id="message" name="message" rows="5" required></textarea></p>
+            <button class="bouton bouton-principal" type="submit">Envoyer l’e-mail <svg class="icone-fleche" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="16" height="16" fill="none"><path d="M17 7 7 17M8 7h9v9" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg></button>
+          </form>
+        </div>
+      </section>
+    </main>
+    <footer class="pied-site">
+      <div class="conteneur grille-pied">
+        <div><a class="marque" href="#accueil"><span class="monogramme" aria-hidden="true">SC</span><span>Saint Chalbhery</span></a><p>Développeur full-stack basé à Brazzaville.</p></div>
+        <nav aria-label="Réseaux sociaux"><a href="https://github.com/Chal-B" target="_blank" rel="noopener noreferrer">GitHub</a><a href="https://www.linkedin.com/in/saint-chalbhery-malonga-2784253b2" target="_blank" rel="noopener noreferrer">LinkedIn</a><a href="mailto:saintmlg@icloud.com">E-mail</a></nav>
+        <p>© 2026 MALONGA Saint Chalbhery</p>
       </div>
-
-      <!-- À propos -->
-      <section id="apropos" class="card about-card" aria-labelledby="about-title">
-        <h2 id="about-title">À propos de moi</h2>
-        <p>
-          Bonjour ! Je m'appelle MALONGA Saint Chalbhery et je suis passionné par le développement web.
-          Originaire de Brazzaville, j'ai toujours été fasciné par la façon dont la technologie
-          peut transformer la vie des gens au Congo, en Afrique et dans le monde.
-        </p>
-        <p>
-          Actuellement en formation à l'Akieni Academy, j'apprends à créer des sites web
-          accessibles, sémantiques et bien structurés. Mon objectif est de devenir
-          développeur full-stack et de contribuer à des projets numériques locaux et mondiaux.
-        </p>
-      </section>
-
-      <!-- Formation -->
-      <section id="formation" class="card formation-card" aria-labelledby="formation-title">
-        <h2 id="formation-title">Formation</h2>
-        <dl class="formation-list">
-          <div>
-            <dt><time datetime="2026">2026</time> – <time datetime="2027">2027</time></dt>
-            <dd><strong>Akieni Academy</strong> — Développement web full-stack</dd>
-          </div>
-          <div>
-            <dt><time datetime="2025">2025</time> – <time datetime="2026">2026</time></dt>
-            <dd><strong>Licence Administration de BDD</strong> — ESGAE, Brazzaville</dd>
-          </div>
-          <div>
-            <dt><time datetime="2024">2024</time> – <time datetime="2025">2025</time></dt>
-            <dd><strong>BTS Analyse et Programmation</strong> — ESGAE, Brazzaville</dd>
-          </div>
-          <div>
-            <dt><time datetime="2022">2022</time> – <time datetime="2023">2023</time></dt>
-            <dd><strong>Baccalauréat série D</strong> — Lycée Camara Laye B, Brazzaville</dd>
-          </div>
-        </dl>
-      </section>
-
-      <!-- Contact -->
-      <section id="contact" class="card contact-card" aria-labelledby="contact-title">
-        <h2 id="contact-title">Contactez-moi</h2>
-        <form action="#" method="post">
-          <div class="form-row">
-            <p>
-              <label for="nom">Nom complet</label>
-              <input type="text" id="nom" name="nom" autocomplete="name" required>
-            </p>
-            <p>
-              <label for="email">E-mail</label>
-              <input type="email" id="email" name="email" autocomplete="email" required>
-            </p>
-          </div>
-          <p>
-            <label for="sujet">Sujet</label>
-            <input type="text" id="sujet" name="sujet" required>
-          </p>
-          <p>
-            <label for="message">Message</label>
-            <textarea id="message" name="message" rows="4" required></textarea>
-          </p>
-          <button type="submit" class="btn btn-primary">Envoyer</button>
-        </form>
-      </section>
-
-    </div>
-    </div>
-  </main>
-
-  <footer class="site-footer">
-    <div class="container">
-      <p>&copy; 2026 MALONGA Saint Chalbhery — Tous droits réservés.</p>
-    </div>
-  </footer>
-
+    </footer>
+  </div>
 </body>
 </html>
